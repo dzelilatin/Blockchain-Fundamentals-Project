@@ -43,24 +43,8 @@ Make sure you have the following installed on your machine:
 - Git
 - Hardhat (for Ethereum smart contract development)
 
-# Smart Contract (Hardhat)
-# Install Dependencies
+### Clone the Repository 
 
-cd contracts
-npm install
-
-# Compile Smart Contracts
-
-npx hardhat compile
-Test Smart Contracts
-
-# Deploy Smart Contracts
-
-npx hardhat run scripts/deploy.js
-
-### Clone the Repository
-
-```bash
 git clone https://github.com/dzelilatin/Blockchain-Fundamentals-Project.git
 cd blockchain fundamentals project
 
@@ -73,7 +57,8 @@ npm install
 You first need to compile the contract and upload it to the blockchain network. Run the following commands to compile and upload the contract.
 
 npx hardhat compile
-npx hardhat run --network volta scripts/deploy.js
+npx hardhat run --network sepolia scripts/deploy.js
+
 Once the contract is uploaded to the blockchain, copy the contract address and copy it in the .env file. You can also use another blockchain by writing the blockchain's endpoint in hardhat-config.
 
 Once you have pasted your private key and contract address in the .env file, simply run command
